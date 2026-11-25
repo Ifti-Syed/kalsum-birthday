@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f8e9e2">
+<title>Happy Birthday, Kalsum ♡</title>
+<style>
+:root{--ink:#401e2b;--rose:#8b3655;--paper:#fff8f1;--line:#e8c4ca}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;min-height:100svh;display:grid;place-items:center;padding:18px;background:radial-gradient(ellipse at 10% 10%,#edc2d0,transparent 55%),radial-gradient(ellipse at 90% 90%,#f0cfae,transparent 50%),#f8e9e2;color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+main{width:min(100%,620px);background:var(--paper);border:1px solid white;border-radius:28px;padding:clamp(22px,6vw,48px);box-shadow:0 22px 65px #79334c25}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding-bottom:13px;margin-bottom:28px;color:var(--rose);font-size:.88rem;letter-spacing:.1em;text-transform:uppercase}
+h1,h2{font:normal clamp(2.35rem,9vw,4.6rem)/1.04 Georgia,serif;letter-spacing:-.045em;margin:0 0 18px}
+em{color:var(--rose)}
+p{margin:0 0 16px}
+.terminal{margin:20px 0;padding:14px 17px;border-radius:13px;background:#402131;color:#ffe6ed;font:.86rem/1.6 ui-monospace,monospace}
+.terminal p{margin:3px 0}
+.controls{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:24px}
+button{font:700 .95rem system-ui,sans-serif;min-height:46px;border:1px solid var(--rose);border-radius:999px;padding:10px 17px;background:var(--rose);color:#fff;cursor:pointer}
+button.secondary{background:transparent;color:var(--rose)}
+button:hover{filter:brightness(1.12)}
+:focus-visible{outline:3px solid #ad5e2e;outline-offset:4px}
+#gallery{margin-inline:clamp(-12px,-2vw,0px)}
+.album{display:grid;gap:20px;margin-top:22px}
+.memory{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(12px,4vw,24px);margin:0;padding:clamp(12px,3vw,19px);border:1px solid #ead1cb;border-radius:18px;background:#fffdf9;box-shadow:0 5px 16px #79334c10}
+.memory:first-child{grid-template-columns:1fr;text-align:center}
+.memory:nth-child(odd):not(:first-child) img{grid-column:2;grid-row:1}
+.memory:nth-child(odd):not(:first-child) figcaption{grid-column:1;grid-row:1}
+.memory img{display:block;width:100%;height:auto;border-radius:10px}
+.memory h3{font:normal clamp(1.15rem,4vw,1.5rem)/1.15 Georgia,serif;color:var(--rose);margin:0 0 8px}
+.memory p{margin:0;font-size:.95rem;line-height:1.5}
+@media(max-width:355px){
+  .memory{grid-template-columns:1fr}
+  .memory:nth-child(odd):not(:first-child) img,.memory:nth-child(odd):not(:first-child) figcaption{grid-column:auto;grid-row:auto}
+}
+#countdown{text-align:center}
+.clock{display:block;margin:20px 0 8px;color:var(--rose);font:clamp(2rem, 10vw, 4rem)/1.1 ui-monospace,monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+.clock-label{color:var(--rose);font-size:.9rem}
+.signature{font:italic 1.3rem Georgia,serif;color:var(--rose);margin-top:24px}
+.cake-icon{font-size:4.2rem;line-height:1.1;margin-bottom:15px}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
+</style>
+</head>
+<body>
+<main>
+<header hidden><span>From Ifty, with love</span><span aria-hidden="true">♡</span></header>
+<section id="countdown">
+<h1>Counting down to <em>your special day.</em></h1>
+<p>At midnight, meri jaan, I get to wish you a happy birthday for the first time. I’ve been looking forward to this moment all day. ♡</p>
+<output class="clock" id="clock" aria-label="Time remaining" aria-live="off">--:--:--</output>
+<p class="clock-label">Hours : Minutes : Seconds</p>
+<noscript><p>Turn on JavaScript to see the countdown and open your surprise.</p></noscript>
+</section>
+<section id="intro" hidden>
+<h1 tabindex="-1">Happy birthday, <em>Kalsum.</em></h1>
+<p>Your first birthday with me. I wanted to make you something you could open again whenever you miss me.</p>
+<div class="terminal">
+<p>&gt; Running birthday surprise…</p>
+<p>&gt; Favourite person found: Kalsum ♡</p>
+</div>
+<div class="controls"><button type="button" data-next="gallery">Open your surprise</button></div>
+</section>
+<section id="gallery" hidden>
+<h2 tabindex="-1">A few of <em>my favourites.</em></h2>
+<p>Every picture of you is my favourite, Kalsum. I picked just a few for today, because if I wrote what I love about all of them, you’d still be reading when it was time to cut the cake.</p>
+<div class="album">
+<figure class="memory">
+<img src="1.webp" alt="Kalsum sitting among flowers on her engagement day">
+<figcaption><h3>The day we got engaged</h3><p>I wish I could have been there beside you that day, meri jaan. Every time I look at this photo, I think about how happy I was to call you my fiancée and how much I wanted to tell you in person.</p></figcaption>
+</figure>
+<figure class="memory">
+<img src="2.webp" alt="Kalsum smiling in pink" loading="lazy">
+<figcaption><h3>That smile of yours</h3><p>I can be in the middle of a long day, open this photo, and catch myself smiling back at you.</p></figcaption>
+</figure>
+<figure class="memory">
+<img src="3.webp" alt="Kalsum beside a lit fountain" loading="lazy">
+<figcaption><h3>Wish I was beside you</h3><p>If I could step into one picture, I’d pick this one. I’d take your hand and ask you to stay by the fountain with me a little longer.</p></figcaption>
+</figure>
+<figure class="memory">
+<img src="4.webp" alt="Kalsum wearing yellow" loading="lazy">
+<figcaption><h3>So lovely in yellow</h3><p>You look so lovely in yellow, Kalsum. This is one of those photos I open when I miss you and keep looking at for a little longer than I meant to.</p></figcaption>
+</figure>
+<figure class="memory">
+<img src="5.webp" alt="Kalsum wearing red" loading="lazy">
+<figcaption><h3>Here’s to many more, Insha’Allah</h3><p>You look beautiful in red, Kalsum. I pray I get to tell you that in person on so many birthdays that we lose count.</p></figcaption>
+</figure>
+</div>
+<div class="controls"><button type="button" data-next="letter">Read my letter</button><button type="button" class="secondary" data-next="intro">Back</button></div>
+</section>
+<section id="letter" hidden>
+<h2 tabindex="-1">Meri pyari <em>Kalsum,</em></h2>
+<p>Salgirah mubarak, meri jaan. This is the first birthday I get to celebrate with you, and I hope it’s the first of many. I wish I could sit beside you, light your candles and see your face when you make your wish. Tonight I’ll hold up the cake on our video call, and one day, Insha’Allah, I’ll be there beside you when you cut it.</p>
+<p>One of the things I love most about you is how kind you are. Even on an ordinary day, seeing your name pop up makes me smile. I look forward to the big days we’ll share, but I think I’ll love the little ones just as much. I want to hear how your day went, make you laugh when you’re tired, and be someone you can always talk to.</p>
+<p>Allah tumhein hamesha khush rakhay. May He give you good health, peace in your heart, and more reasons to smile in the year ahead. May He protect our rishta and fill it with sukoon, trust, and barakah. I pray we keep choosing each other with love and patience, especially on the days when life feels difficult. May Allah make us a blessing for each other and a source of happiness and ease for both our families.</p>
+<p>I want to be there for your dreams, celebrate the things you’re proud of, and stand beside you when you need me. Insha’Allah, years from now, we’ll still laugh about how I tried to cut a cake with you through a screen on your first birthday with me.</p>
+<p>Happy birthday, meri jaan. I love you, and I’m so grateful I get to celebrate you today. Ameen to every good dua you make for yourself and for us. ♡</p>
+<p class="signature">Hamesha tumhara,<br>Ifty</p>
+<div class="controls"><button type="button" data-next="cake">Okay, where’s my cake?</button><button type="button" class="secondary" data-next="gallery">Back to photos</button></div>
+</section>
+<section id="cake" hidden>
+<p class="cake-icon" aria-hidden="true">🎂</p>
+<h2 tabindex="-1">Make a wish, <em>meri jaan.</em></h2>
+<p>Play the birthday tune, then call me. The real cake is waiting, and so am I. ♡</p>
+<audio id="birthday-tune" src="happy-birthday.wav" preload="none" controls aria-label="Happy Birthday instrumental"></audio>
+<div class="controls"><button type="button" class="secondary" data-next="intro">Start again</button></div>
+</section>
+</main>
+<canvas aria-hidden="true"></canvas>
+<script>
+const unlockAt = Date.parse('2026-11-26T00:00:00+03:00');
+const countdown = document.getElementById('countdown');
+const clock = document.getElementById('clock');
+let countdownTick;
+function updateCountdown() {
+  clearTimeout(countdownTick);
+  if (countdown.hidden) return;
+  const remaining = unlockAt - Date.now();
+  if (remaining <= 0) {
+    countdown.hidden = true;
+    document.querySelector('header').hidden = false;
+    document.getElementById('intro').hidden = false;
+    return;
+  }
+  const seconds = Math.ceil(remaining / 1000);
+  clock.textContent = [Math.floor(seconds / 3600), Math.floor(seconds / 60) % 60, seconds % 60]
+    .map(value => String(value).padStart(2, '0')).join(':');
+  countdownTick = setTimeout(updateCountdown, remaining % 1000 || 1000);
+}
+updateCountdown();
+window.addEventListener('pageshow', updateCountdown);
+document.addEventListener('visibilitychange', updateCountdown);
+
+
+const canvas = document.querySelector('canvas');
+const context = canvas.getContext('2d');
+let animation;
+function celebrate() {
+  if (!context || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  cancelAnimationFrame(animation);
+  canvas.width = innerWidth;
+  canvas.height = innerHeight;
+  const colors = ['#ffacc9', '#ffd698', '#fff2e7', '#e482a7'];
+  const pieces = Array.from({length: 80}, (_, index) => ({
+    x: Math.random() * canvas.width, y: -Math.random() * canvas.height,
+    speed: 100 + Math.random() * 280, size: 4 + Math.random() * 6,
+    color: colors[index % colors.length]
+  }));
+  const start = performance.now();
+  function draw(now) {
+    const elapsed = (now - start) / 1000;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    if (elapsed >= 3.5) return;
+    for (const piece of pieces) {
+      context.fillStyle = piece.color;
+      context.fillRect(piece.x + 18 * Math.sin(elapsed * 3 + piece.x), piece.y + elapsed * piece.speed, piece.size, piece.size * .65);
+    }
+    animation = requestAnimationFrame(draw);
+  }
+  animation = requestAnimationFrame(draw);
+}
+const tune = document.getElementById('birthday-tune');
+for (const button of document.querySelectorAll('[data-next]')) {
+  button.addEventListener('click', () => {
+    const next = document.getElementById(button.dataset.next);
+    button.closest('section').hidden = true;
+    next.hidden = false;
+    next.querySelector('h1, h2').focus({preventScroll: true});
+    window.scrollTo(0, 0);
+    if (next.id === 'cake') {
+      celebrate();
+    } else {
+      tune.pause();
+      cancelAnimationFrame(animation);
+      context?.clearRect(0, 0, canvas.width, canvas.height);
+    }
+  });
+}
+</script>
+</body>
+</html>
